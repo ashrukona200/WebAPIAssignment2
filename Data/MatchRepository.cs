@@ -38,7 +38,7 @@ namespace assigntwo.Data{
             return a[0];
         }
 
-        //saving updates to repository
+        //Saving updates to repository
         public async Task<bool> SaveChanges(){
             logger.LogInformation($"Attempting to save changes in context");
             return (await context.SaveChangesAsync()) > 0;
